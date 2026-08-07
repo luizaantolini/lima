@@ -2,7 +2,7 @@
 
 ## Dados pessoais
 - Nome completo: Luiza Antolini dos Reis
-- Cidade/Estado: Paulínia, São Paulo
+- Cidade/Estado: Paulínia, São Paulo.
 - Telefone: (19) 99416-3456
 - E-mail: luizaantolini@gmail.com
 - LinkedIn: https://www.linkedin.com/in/luiza-antolini-187b233b0/
