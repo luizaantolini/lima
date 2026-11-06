@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Define a codificação da página e a compatibilidade com navegador -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PixelGear eSports Store</title>
@@ -8,12 +9,14 @@
 </head>
 <body>
 
+    <!-- Cabeçalho da página com nome da loja e menu de navegação -->
     <header class="topbar">
         <div class="container">
             <div class="brand">PixelGear</div>
             <nav class="nav" aria-label="Navegação principal">
                 <a href="#produto">Produto</a>
-                <a href="#sobre">Sobre</a>  
+                <a href="#sobre">Sobre</a>
+                <a href="#hardware">Hardware</a>
                 <a href="#perifericos">Periféricos</a>
                 <a href="#montagem">Montagem</a>
                 <a href="#contato">Contato</a>
@@ -22,6 +25,7 @@
     </header>
 
     <main>
+        <!-- Seção principal da página: apresentação do produto em destaque -->
         <section class="hero" id="produto">
             <div class="container hero-grid">
                 <div>
@@ -34,6 +38,7 @@
                         <a class="btn btn-secondary" href="#perifericos">Ver especificações</a>
                     </div>
 
+                    <!-- Estatísticas rápidas do produto -->
                     <div class="stats">
                         <div class="stat">
                             <strong>RTX</strong>
@@ -50,12 +55,14 @@
                     </div>
                 </div>
 
+                <!-- Imagem principal do produto em destaque -->
                 <div class="hero-image">
                     <img src="images/pcc-gameer.jpg" alt="Foto do PC Gamer PixelGear" width="600">
                 </div>
             </div>
         </section>
 
+        <!-- Seção de apresentação da loja -->
         <section id="sobre">
             <div class="container">
                 <h2 class="section-title">Sobre a PixelGear</h2>
@@ -78,6 +85,7 @@
             </div>
         </section>
 
+        <!-- Seção com os periféricos e a tabela de preços -->
         <section id="perifericos">
             <div class="container catalog">
                 <div class="list-box">
@@ -91,6 +99,7 @@
                     </ul>
                 </div>
 
+                <!-- Tabela com os modelos de computadores e preços -->
                 <div class="table-box">
                     <h2 class="section-title">Tabela de preços</h2>
                     <table>
@@ -122,6 +131,7 @@
                 </div>
             </div>
 
+            <!-- Galeria de imagens dos periféricos que acompanham o produto -->
             <div class="container">
                 <div class="product-gallery">
                     <article class="product-item">
@@ -162,6 +172,7 @@
             </div>
         </section>
 
+        <!-- Seção com o passo a passo da montagem do computador -->
         <section id="montagem">
             <div class="container">
                 <div class="steps-box">
@@ -177,6 +188,63 @@
             </div>
         </section>
 
+        <!-- Configuração do Hardware -->
+        <fieldset>
+            <legend><strong>Preferências do Hardware</strong></legend>
+
+
+            <p>
+                <label for="gpu">Escolha a Placa de Vídeo Principal:*</label><br>
+                <select id="gpu" name="gpu" required>
+                    <option value="">-- Selecione uma GPU --</option>
+                    <option value="gtx1650">NVIDIA GTX 1650 4GB (Entry)</option>
+                    <option value="rtx4060ti">NVIDIA RTX 4060 Ti 8GB (Mid-Range)</option>
+                    <option value="rtx4090">NVIDIA RTX 4090 24GB (High-End 4K)</option>
+                </select>
+            </p>
+
+
+            <p>
+                <strong>Objetivo Principal da Máquina:*</strong><br>
+                <input type="radio" id="jogos" name="objetivo" value="jogos" checked>
+                <label for="jogos">Jogos Eletrônicos / eSports</label><br>
+                
+                <input type="radio" id="streaming" name="objetivo" value="streaming">
+                <label for="streaming">Live Stream / Criação de Conteúdo</label><br>
+                
+                <input type="radio" id="trabalho" name="objetivo" value="trabalho">
+                <label for="trabalho">Edição de Vídeo 3D / Arquitetura</label>
+            </p>
+
+
+            <p>
+                <strong>Serviços e Adicionais Desejados:</strong><br>
+                <input type="checkbox" id="rgb" name="adicionais[]" value="rgb_extra">
+                <label for="rgb">Fitas de LED RGB Adicionais no Gabinete</label><br>
+
+
+                <input type="checkbox" id="overclock" name="adicionais[]" value="overclock">
+                <label for="overclock">Perfil de Overclock Configurado na BIOS</label><br>
+
+
+                <input type="checkbox" id="garantia_estendida" name="adicionais[]" value="garantia3anos">
+                <label for="garantia_estendida">Garantia Estendida de 3 Anos PixelGear Care</label>
+            </p>
+
+
+            <p>
+                <label for="observacoes">Observações ou Dúvidas Específicas:</label><br>
+                <textarea id="observacoes" name="observacoes" rows="4" cols="50" placeholder="Descreva jogos específicos que pretende rodar ou preferências de marcas..."></textarea>
+            </p>
+
+
+            <p>
+                <label for="foto_referencia">Anexar Print ou Foto do Setup de Referência:</label><br>
+                <input type="file" id="foto_referencia" name="foto_referencia" accept="image/*">
+            </p>
+        </fieldset>
+
+        <!-- Seção do formulário para coleta dos dados do cliente -->
         <section id="contato">
             <div class="container">
                 <div class="form-box">
@@ -225,8 +293,8 @@
                 </div>
             </div>
         </section>
-    </main>
 
+    <!-- Rodapé da página com o nome da loja -->
     <footer>
         <div class="container">
             <p>&copy; 2026 PixelGear eSports Store</p>
