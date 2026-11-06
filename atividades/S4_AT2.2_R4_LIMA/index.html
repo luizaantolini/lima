@@ -7,7 +7,7 @@
 </head>
 <body>
 
-    <!-- Cabeçalho da página com nome da loja e navegação principal -->
+    <!-- cabeçalho da página com nome da loja e navegação principal -->
     <header>
         <h1>PixelGear eSports Store</h1>
         <nav>
@@ -20,14 +20,16 @@
     </header>
 
     <main>
-        <!-- Seção principal do produto em destaque -->
+        <!-- a página começa aqui, dentro do conteúdo principal -->
+
+        <!-- seção do produto principal que está sendo vendido -->
         <section id="produto">
             <h2>PC Gamer PixelGear Ultimate</h2>
             <p>O melhor computador para jogos e eSports.</p>
             <img src="images/pcc-gameer.jpg" alt="Foto do PC Gamer PixelGear" width="300">
         </section>
 
-        <!-- Seção com a apresentação da loja -->
+        <!-- seção sobre a loja e sua missão, metas e valores -->
         <section id="sobre">
             <h2>Sobre a PixelGear</h2>
 
@@ -47,7 +49,7 @@
             </article>
         </section>
 
-        <!-- Seção com lista de periféricos inclusos e tabela de preços -->
+        <!-- lista dos periféricos que vêm junto com o computador -->
         <section id="perifericos">
             <h2>Periféricos inclusos</h2>
             <ul>
@@ -58,6 +60,7 @@
                 <li>Monitor Gamer 144Hz</li>
             </ul>
 
+            <!-- tabela com os modelos de PCs e seus preços -->
             <h2>Preços</h2>
             <table border="1">
                 <tr>
@@ -83,7 +86,7 @@
             </table>
         </section>
 
-        <!-- Seção com instruções de montagem do computador -->
+        <!-- instruções do passo a passo para montar e ligar o PC -->
         <section id="montagem">
             <h2>Passo a passo da montagem</h2>
             <ol>
@@ -95,10 +98,11 @@
             </ol>
         </section>
 
-        <!-- Formulário para coleta de dados do cliente -->
+        <!-- formulário para coletar os dados do cliente -->
         <section id="contato">
             <h2>Dados do Cliente</h2>
             <form>
+                <!-- agrupa os dados pessoais em um bloco visual -->
                 <fieldset>
                     <legend>Dados pessoais</legend>
 
@@ -112,13 +116,37 @@
                     <input type="tel" id="telefone" name="telefone" required><br><br>
                 </fieldset>
 
+                <!-- botão para enviar o formulário -->
                 <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
 
-    <!-- Rodapé da página -->
-    <footer>
+</body>
+
+   <p>
+                <label for="observacoes">Observações ou Dúvidas Específicas:</label><br>
+                <textarea id="observacoes" name="observacoes" rows="4" cols="50" placeholder="Descreva jogos específicos que pretende rodar ou preferências de marcas..."></textarea>
+            </p>
+
+            <p>
+                <label for="foto_referencia">Anexar Print ou Foto do Setup de Referência:</label><br>
+                <input type="file" id="foto_referencia" name="foto_referencia" accept="image/*">
+            </p>
+        </fieldset>
+
+        <br>
+
+        <button type="submit">ENVIAR SOLICITAÇÃO DE ORÇAMENTO</button>
+        <button type="reset">Limpar Campos</button>
+
+    </form>
+
+    <hr>
+
+    <!-- rodapé -->
+    <p><i>"Desempenho não é um luxo, é uma necessidade."</i> — <small>PixelGear Team 2026</small></p>
+     <footer>
         <hr>
         <p>&copy; 2026 PixelGear eSports Store</p>
     </footer>
