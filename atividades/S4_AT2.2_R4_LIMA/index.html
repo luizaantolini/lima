@@ -4,34 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PixelGear eSports Store</title>
-    
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Cabeçalho da página com nome da loja e navegação principal -->
     <header>
         <h1>PixelGear eSports Store</h1>
         <nav>
             <a href="#produto">Produto</a> |
             <a href="#sobre">Sobre Nós</a> |
             <a href="#perifericos">Periféricos</a> |
-            <a href="#montagem">Montagem</a>
+            <a href="#montagem">Montagem</a> |
+            <a href="#contato">Contato</a>
         </nav>
     </header>
 
     <main>
+        <!-- Seção principal do produto em destaque -->
         <section id="produto">
             <h2>PC Gamer PixelGear Ultimate</h2>
             <p>O melhor computador para jogos e eSports.</p>
-            
- <img src="images/pcc-gameer.jpg" alt="Foto do PC Gamer" width="300">
-
-           
+            <img src="images/pcc-gameer.jpg" alt="Foto do PC Gamer PixelGear" width="300">
         </section>
 
+        <!-- Seção com a apresentação da loja -->
         <section id="sobre">
             <h2>Sobre a PixelGear</h2>
-            
+
             <article>
                 <h3>Missão</h3>
                 <p>Oferecer computadores de alta qualidade com preço justo para todos os gamers.</p>
@@ -48,6 +47,7 @@
             </article>
         </section>
 
+        <!-- Seção com lista de periféricos inclusos e tabela de preços -->
         <section id="perifericos">
             <h2>Periféricos inclusos</h2>
             <ul>
@@ -58,53 +58,32 @@
                 <li>Monitor Gamer 144Hz</li>
             </ul>
 
-              <table border="1">
-        <thead>
-            <tr>
-                <th>Modelo</th>
-                <th>Processador</th>
-                <th>Placa de Vídeo</th>
-                <th>Memória RAM</th>
-                <th>Preço no PIX</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td><b>Setup Entry</b></td>
-                <td>Intel i5 / Ryzen 5</td>
-                <td>GTX 1650 4GB</td>
-                <td>16GB DDR4</td>
-                <td>R$ 3.200,00</td>
-            </tr>
-
-            <tr>
-                <td><b>Setup Beast (Destaque)</b></td>
-                <td>Intel i7 / Ryzen 7</td>
-                <td>RTX 4060 Ti 8GB</td>
-                <td>32GB DDR5</td>
-                <td><strong>R$ 6.000,00</strong></td>
-            </tr>
-
-            <tr>
-                <td><b>Setup Ultra 4K</b></td>
-                <td>Intel i9 / Ryzen 9</td>
-                <td>RTX 4090 24GB</td>
-                <td>64GB DDR5</td>
-                <td>R$ 14.500,00</td>
-            </tr>
-
-            <tr>
-                <td><b>PC Gamer PixelGear Ultimate</b></td>
-                <td>Intel i7 / Ryzen 7</td>
-                <td>RTX 4060 8GB</td>
-                <td>32GB DDR4</td>
-                <td><strong>R$ 5.300,00</strong></td>
-            </tr>
-        </tbody>
-    </table>
-
+            <h2>Preços</h2>
+            <table border="1">
+                <tr>
+                    <th>Modelo</th>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                </tr>
+                <tr>
+                    <td>Setup Entry</td>
+                    <td>Intel i5, GTX 1650, 16GB RAM</td>
+                    <td>R$ 3.200,00</td>
+                </tr>
+                <tr>
+                    <td>Setup Beast</td>
+                    <td>Intel i7, RTX 4060 Ti, 32GB RAM</td>
+                    <td>R$ 6.000,00</td>
+                </tr>
+                <tr>
+                    <td>Setup Ultra 4K</td>
+                    <td>Intel i9, RTX 4090, 64GB RAM</td>
+                    <td>R$ 14.500,00</td>
+                </tr>
+            </table>
         </section>
+
+        <!-- Seção com instruções de montagem do computador -->
         <section id="montagem">
             <h2>Passo a passo da montagem</h2>
             <ol>
@@ -115,31 +94,30 @@
                 <li>Pressione o botão de ligar e aproveite!</li>
             </ol>
         </section>
+
+        <!-- Formulário para coleta de dados do cliente -->
+        <section id="contato">
+            <h2>Dados do Cliente</h2>
+            <form>
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required><br><br>
+                </fieldset>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Dados do cliente</title>
-</head>
-<body>
-    <h2>Dados do Cliente</h2>
-    <form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required><br><br>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" required><br><br>
-
-        <input type="submit" value="Enviar">
-    </form>
-</body>
-</html>
-
+    <!-- Rodapé da página -->
     <footer>
         <hr>
         <p>&copy; 2026 PixelGear eSports Store</p>
