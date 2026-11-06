@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelGear eSports Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <div class="container">
+            <div class="brand">PixelGear</div>
+            <nav class="nav" aria-label="Navegação principal">
+                <a href="#produto">Produto</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#perifericos">Periféricos</a>
+                <a href="#montagem">Montagem</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="produto">
+            <div class="container hero-grid">
+                <div>
+                    <span class="eyebrow">Performance máxima</span>
+                    <h1>PC Gamer PixelGear Ultimate</h1>
+                    <p>O melhor computador para jogos e eSports com alto desempenho, design moderno e configurações pensadas para ganhar partidas e aproveitar cada detalhe visual.</p>
+
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#contato">Solicitar orçamento</a>
+                        <a class="btn btn-secondary" href="#perifericos">Ver especificações</a>
+                    </div>
+
+                    <div class="stats">
+                        <div class="stat">
+                            <strong>RTX</strong>
+                            <span>4060 / 4090</span>
+                        </div>
+                        <div class="stat">
+                            <strong>32GB</strong>
+                            <span>DDR4 / DDR5</span>
+                        </div>
+                        <div class="stat">
+                            <strong>144Hz</strong>
+                            <span>Monitor inclusos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="images/pcc-gameer.jpg" alt="Foto do PC Gamer PixelGear" width="600">
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <div class="container">
+                <h2 class="section-title">Sobre a PixelGear</h2>
+                <div class="cards">
+                    <article class="card">
+                        <h3>Missão</h3>
+                        <p>Oferecer computadores de alta qualidade com preço justo para todos os gamers.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Metas</h3>
+                        <p>Ser a loja gamer mais conhecida no mercado e confiável da região.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Valores</h3>
+                        <p>Qualidade, bom atendimento, respeito ao cliente e paixão por jogos.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="perifericos">
+            <div class="container catalog">
+                <div class="list-box">
+                    <h2 class="section-title">Periféricos inclusos</h2>
+                    <ul>
+                        <li>Teclado Mecânico RGB</li>
+                        <li>Mouse Gamer 12.000 DPI</li>
+                        <li>Headset Surround 7.1</li>
+                        <li>Mousepad Extra Grande</li>
+                        <li>Monitor Gamer 144Hz</li>
+                    </ul>
+                </div>
+
+                <div class="table-box">
+                    <h2 class="section-title">Tabela de preços</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Modelo</th>
+                                <th>Descrição</th>
+                                <th>Preço</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Setup Entry</td>
+                                <td>Intel i5, GTX 1650, 16GB RAM</td>
+                                <td>R$ 3.200,00</td>
+                            </tr>
+                            <tr>
+                                <td>Setup Beast</td>
+                                <td>Intel i7, RTX 4060 Ti, 32GB RAM</td>
+                                <td>R$ 6.000,00</td>
+                            </tr>
+                            <tr>
+                                <td>Setup Ultra 4K</td>
+                                <td>Intel i9, RTX 4090, 64GB RAM</td>
+                                <td>R$ 14.500,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="montagem">
+            <div class="container">
+                <div class="steps-box">
+                    <h2 class="section-title">Passo a passo da montagem</h2>
+                    <ol>
+                        <li>Retire o computador e os acessórios da caixa.</li>
+                        <li>Ligue o cabo de energia na tomada.</li>
+                        <li>Conecte o monitor na placa de vídeo.</li>
+                        <li>Ligue o teclado e o mouse nas portas USB.</li>
+                        <li>Pressione o botão de ligar e aproveite!</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container">
+                <div class="form-box">
+                    <h2 class="section-title">Dados do cliente</h2>
+                    <form>
+                        <fieldset>
+                            <legend>Dados pessoais</legend>
+
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label for="nome">Nome</label>
+                                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                                </div>
+
+                                <div class="field">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="seuemail@email.com" required>
+                                </div>
+
+                                <div class="field">
+                                    <label for="telefone">Telefone</label>
+                                    <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+                                </div>
+
+                                <div class="field">
+                                    <label for="modelo">Modelo desejado</label>
+                                    <select id="modelo" name="modelo">
+                                        <option>Setup Entry</option>
+                                        <option>Setup Beast</option>
+                                        <option>Setup Ultra 4K</option>
+                                    </select>
+                                </div>
+
+                                <div class="field full">
+                                    <label for="observacoes">Observações</label>
+                                    <textarea id="observacoes" name="observacoes" placeholder="Descreva suas preferências, jogos ou necessidades..."></textarea>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-actions">
+                            <button class="btn btn-primary" type="submit">Enviar</button>
+                            <button class="btn btn-secondary" type="reset">Limpar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 PixelGear eSports Store</p>
+        </div>
+    </footer>
+
+</body>
+</html>
